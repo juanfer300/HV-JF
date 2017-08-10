@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Hoja de vida JF</title>
+
+	<meta charset="UTF-8" />
+	<meta name="author" content="juan fernando ramírez" />
+	<meta name="description" content="Hoja de vida" />
+	<link rel="stylesheet" href="resources/css/estilos.css" type="text/css" />
+
+</head>
+
+<body>
+
+	<div id="pagina">
+
+		<!-- Logo -->
+		<object data="resources/img/logo-JF-proto.svg" type="image/svg+xml" width="200px" height="300px">
+			<img src="resources/img/logo-JF-proto.png" />
+		</object>
+		<br>
+
+		<!-- Título -->
+		<h1>HOJA DE VIDA</h1>
+
+		<!-- Datos personales -->
+		<h2><b>Nombres:</b> Juan Fernando </h2>
+		<h2><b>Apellidos:</b> Ramírez Chavarría</h2>
+		<h3><b>Fecha de nacimiento:</b> 08 de agosto de 1995</h3>
+		<h3><b>Lugar de nacimiento:</b> Medellín, Colombia</h3>
+
+		<!-- Enlaces a menú -->
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="educacion.html">Educación</a></li>
+				<li><a href="experiencia.html">Experiencia</a></li>
+			</ul>
+		</div>
+
+		<hr>
+
+		<!-- Titúlo sección -->
+		<h2>Educación</h2>
+
+		<!-- Tabla -->
+		<table id="educacion">
+			<thead>
+				<tr>
+					<th>Año</th>
+					<th>Institución</th>
+					<th>Lugar</th>
+					<th>¿Culminó?</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2012</td>
+					<td>Politecnico Colombiano Jaime Isaza Cadavid</td>
+					<td>El Poblado, Antioquia, Colombia</td>
+					<td>Si</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- Formulario -->
+		<h3>Agregar Estudios</h3>
+		<form>
+			
+			<label>Año:</label>
+			<select>
+				<option value="2017">2017</option>
+				<option value="2016">2016</option>
+				<option value="2015">2015</option>
+				<option value="2014">2014</option>
+			</select>
+			
+			<br><br>
+			
+			<label>Institución:</label>
+			<input type="text" placeholder="Ingrese su institución" name="institucion" required="true">
+			
+			<br><br>
+			
+			<label>Lugar:</label>
+			<textarea rows="2" cols="50" placeholder="Ingrese la ubicación de la institución" name="lugar"></textarea>
+			
+			<br><br>
+			
+			<label>¿Culminó?:</label>
+			<input type="radio" name="si" value="positivo"> Si
+			<input type="radio" name="no" value="negativo"> No
+			
+			<br><br>
+			
+			<input type="submit" value="Enviar">
+			
+		</form>
+
+
+		<!-- Pie de página -->
+		<br><br>
+		<div id="footer">
+			<p>
+				Contactame: <a href="/" target="_blank">juanfernando36@hotmail.com</a><br>
+				<label>3146934667</label>
+			</p>
+		</div>
+	</div>
+</body>
+
+</html>
